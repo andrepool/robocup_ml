@@ -1,0 +1,15 @@
+robocup_ml/r4/cam0_20190707_054601.jpg
+robocup_ml/r4/cam0_20190707_054744.jpg
+robocup_ml/r4/cam0_20190707_053414.jpg
+robocup_ml/r4/cam0_20190707_051854.jpg
+robocup_ml/r4/cam0_20190707_051130.jpg
+robocup_ml/r4/cam0_20190707_052011.jpg
+robocup_ml/r4/cam0_20190707_054609.jpg
+robocup_ml/r4/cam0_20190707_052004.jpg
+robocup_ml/r4/cam0_20190707_054059.jpg
+robocup_ml/r4/cam0_20190707_050813.jpg
+robocup_ml/r4/cam0_20190707_053604.jpg
+robocup_ml/r4/cam0_20190707_053511.jpg
+robocup_ml/r4/cam0_20190707_050803.jpg
+robocup_ml/r4/cam0_20190707_050847.jpg
+robocup_ml/r4/cam0_20190707_054023.jpg
