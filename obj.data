@@ -2,5 +2,5 @@ classes= 5
 train  = robocup_ml/train.txt
 valid  = robocup_ml/test.txt
 names = robocup_ml/obj.names
-backup = backup/
+backup = backup
 
