@@ -10,7 +10,6 @@ import glob, os
 image_dirs = []
 
 
-image_dirs.append('20191203/r1')
 image_dirs.append('20190606/r2')
 image_dirs.append('20190606/r4')
 image_dirs.append('20190706/r5')
@@ -19,6 +18,7 @@ image_dirs.append('20190707/r3')
 image_dirs.append('20190707/r4')
 image_dirs.append('20190926/r4')
 image_dirs.append('20190926/r6')
+image_dirs.append('20191203/r1')
 
 train_set = open('train.txt', 'w')  
 test_set = open('test.txt', 'w')
