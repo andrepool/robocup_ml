@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# Copyright 2019 Andre Pool
+# Copyright 2019-2020 Andre Pool
 # SPDX-License-Identifier: Apache-2.0
 
 # split all jpg's over the train.tx and test.txt
@@ -19,6 +19,7 @@ image_dirs.append('20190707/r4')
 image_dirs.append('20190926/r4')
 image_dirs.append('20190926/r6')
 image_dirs.append('20191203/r1')
+image_dirs.append('20200123/r1')
 
 train_set = open('train.txt', 'w')  
 test_set = open('test.txt', 'w')
