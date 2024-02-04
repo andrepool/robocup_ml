@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# Copyright 2019-2020 Andre Pool
+# Copyright 2019-2024 Andre Pool
 # SPDX-License-Identifier: Apache-2.0
 
 # split all jpg's over the train.tx and test.txt
@@ -39,15 +39,15 @@ for image_dir in image_dirs:
    for file_name in sorted(glob.glob(image_dir +"/*.jpg")) :
       # print("%s" % file_name )
       if split_counter == 8 : # 10 percent excluded for testing
-         test_set.write("robocup_ml/" + file_name + "\n")
+         test_set.write("" + file_name + "\n")
          split_counter += 1
          test_amount += 1
       elif split_counter == 9 : # 10 percent excluded for validation
-         valid_set.write("robocup_ml/" + file_name + "\n")
+         valid_set.write("" + file_name + "\n")
          split_counter = 0
          valid_amount += 1
       else :
-         train_set.write("robocup_ml/" + file_name + "\n")
+         train_set.write("" + file_name + "\n")
          split_counter += 1
          train_amount += 1
       

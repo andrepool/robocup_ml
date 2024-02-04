@@ -1,0 +1,81 @@
+#!/bin/bash -e
+
+# -map: tells Darknet to calculate the "mean average precision" periodically during training to decide if training is progressing correctly.
+# -dont_show: do not show the chart.png image on the GUI
+# -clear: resets the "image seen" counter in the .weights file back to zero, and is required if you would like to re-train with weights that have already reached the maximum batch size.
+
+mkdir -p backup 
+
+args=""
+restart=0
+# config="416_416"
+# config="416_416_reduced"
+config="608_800"
+show=0
+
+while getopts "c:rs" opt; do
+   case $opt in
+      c)
+         config=${OPTARG}
+         ;;
+      r)
+         restart=1
+         ;;
+      s)
+         show=1
+         ;;
+      ?)
+         echo "Invalid option: ${OPTARG}"
+         ;;
+   esac
+done
+
+echo "INFO    using config $config"
+
+if [ $show -eq 0 ]; then
+   args+=" -dont_show"
+fi
+
+if [ $restart -eq 1 ]; then
+   echo "INFO    start training from scratch"
+   rm -rf /home/$USER/robocup_ml/backup/yolov4_${config}*
+   args+=" -clear"
+fi
+
+# backup file
+backup_file=/home/$USER/robocup_ml/backup/yolov4_${config}_last.weights
+touch $backup_file
+echo "INFO    backup file $backup_file"
+
+# config file
+config_file=/home/$USER/robocup_ml/yolov4_${config}.cfg
+if [ -f $config_file ]; then
+   echo "INFO    using config file $config_file"
+else 
+   echo "ERROR   config file $config_file does not exist, abort"
+   exit 1
+fi
+
+# objects data file
+obj_data_file=/home/$USER/robocup_ml/obj.data
+if [ -f $obj_data_file ]; then
+   echo "INFO    using objects data file $obj_data_file"
+else 
+   echo "ERROR   objects data file $obj_data_file does not exist, abort"
+   exit 1
+fi
+
+echo "INFO    darknet arguments:$args"
+
+# last regex is to remove empty lines
+/home/$USER/darknet/darknet \
+   detector \
+   train \
+   $obj_data_file \
+   $config_file \
+   $backup_file \
+   $args \
+   2>&1 | \
+   stdbuf -o0 grep -v -Ee '" 416 x 416 "|" 608 x 800 "|" allocate "| Normalizer:|Loaded:|total_bbox | Tensor Cores are disabled' | \
+   stdbuf -o0 grep -v -E "^$" > train_yolov4_${config}.log 2>&1
+
