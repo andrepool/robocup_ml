@@ -5,7 +5,7 @@ Copyright 2019-2024 Andre Pool
 
 SPDX-License-Identifier: Apache-2.0
 
-The set contains more than 1000 annotated images from Robocup Middle Size League (MSL)
+The set contains more than 1500 annotated images from Robocup Middle Size League (MSL)
 
 https://msl.robocup.org/
 
@@ -29,4 +29,5 @@ https://github.com/stephanecharette/DarkMark
 | Bordeaux  | 20230709 | r5           |   75 | finals and semi finals                               |
 | Bordeaux  | 20230709 | r6           |   86 | finals and semi finals                               |
 | Bordeaux  | 20230709 | r8           |   11 | small test field including yellow shirt              |
+| De Locht  | 20240222 | r12          |   27 | practice match Tech United                           |
 | De Locht  | 20240222 | r15          |   17 | practice match Tech United                           |
