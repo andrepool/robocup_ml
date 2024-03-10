@@ -30,4 +30,5 @@ https://github.com/stephanecharette/DarkMark
 | Bordeaux  | 20230709 | r6           |   86 | finals and semi finals                               |
 | Bordeaux  | 20230709 | r8           |   11 | small test field including yellow shirt              |
 | De Locht  | 20240222 | r12          |   27 | practice match Tech United                           |
+| De Locht  | 20240222 | r14          |   27 | practice match Tech United and VDL Robotsports       |
 | De Locht  | 20240222 | r15          |   17 | practice match Tech United                           |
