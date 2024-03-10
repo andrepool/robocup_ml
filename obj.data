@@ -1,6 +1,6 @@
 classes= 5
 train  = train.txt
-valid  = test.txt
+valid  = validation.txt
 names = obj.names
 backup = backup
 
