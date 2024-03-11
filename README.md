@@ -19,6 +19,7 @@ https://github.com/stephanecharette/DarkMark
 | De  Locht | 20190606 | r2           |   49 | perfect light                                        | 
 | De  Locht | 20190606 | r4           |   91 | perfect light                                        |
 | Bangkok   | 20220715 | r7           |  118 | yellow T-shirts, robots from different teams         |
+| Bangkok   | 20220716 | r2           |   29 | finals                                               |
 | Bangkok   | 20220716 | r6           |   62 | finals                                               |
 | Bordeaux  | 20230709 | r5           |   75 | finals and semi finals                               |
 | Bordeaux  | 20230709 | r6           |   86 | finals and semi finals                               |

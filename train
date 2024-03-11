@@ -9,8 +9,8 @@ mkdir -p backup
 args=""
 restart=0
 # config="416_416"
-# config="416_416_reduced"
-config="608_800"
+config="416_416_reduced"
+# config="608_800"
 show=0
 
 while getopts "c:rs" opt; do
