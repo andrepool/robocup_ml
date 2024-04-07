@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 # Copyright 2019-2024 Andre Pool
 # SPDX-License-Identifier: Apache-2.0
