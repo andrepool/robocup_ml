@@ -33,6 +33,8 @@ image_dirs.append('20240222/r15')
 image_dirs.append('20240606/r1')
 image_dirs.append('20240606/r12')
 image_dirs.append('20240606/r16')
+image_dirs.append('20240716/r5')
+image_dirs.append('20240717/r6')
 
 train_set = open('train.txt', 'w')  
 # test_set = open('test.txt', 'w')
