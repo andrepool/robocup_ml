@@ -1,0 +1,23 @@
+#!/bin/bash -e
+
+# see:
+# https://github.com/AlexeyAB/darknet
+
+# and see:
+# https://docs.google.com/document/d/1q47J5y0mhVgiK5d4lcnP9oS79Fzi0MTgCXuMV58cXuk/edit
+
+# asume darknet is in $HOME/darknet
+
+$HOME/darknet/darknet \
+   detector test \
+   obj.data \
+   yolov4_416_416_reduced.cfg \
+   yolov4_416_416_reduced_last.weights \
+   -thresh 0.20 \
+   -ext_output \
+   -dont_show \
+   -out test_darknet.txt \
+   20240222/r15/cam0_20240222_201530.jpg
+
+
+

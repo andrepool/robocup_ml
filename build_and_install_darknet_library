@@ -1,0 +1,29 @@
+#!/bin/bash -e
+
+# asume darknet is in $HOME/darknet
+
+ln -sf $(pwd)/Makefile_darknet $HOME/darknet/Makefile
+
+pushd .
+
+cd $HOME/darknet
+
+make clean
+
+make -j $(nproc)
+
+echo "INFO   copy darknet.h to local include directory"
+sudo cp $HOME/darknet/include/darknet.h /usr/local/include/darknet.h 
+
+echo "INFO   copy libdarket.so to local library directory"
+sudo cp $HOME/darknet/libdarknet.so /usr/local/lib/libdarknet.so
+
+popd
+
+echo "INFO   test darknet"
+./test_darknet
+
+# ./train
+# cat train_yolov4_416_416_reduced.log
+
+echo "INFO   all done"
