@@ -48,7 +48,13 @@ touch $backup_file
 echo "INFO    backup file $backup_file"
 
 # config file
-config_file=/home/$USER/robocup_ml/yolov4_${config}.cfg
+if [[ $(hostame) == luke ]]; then
+   config_file=/home/$USER/robocup_ml/yolov4_${config}_luke.cfg
+   args+=" -gpus 0,1,2,3"
+else
+   config_file=/home/$USER/robocup_ml/yolov4_${config}.cfg
+fi
+
 if [ -f $config_file ]; then
    echo "INFO    using config file $config_file"
 else 
