@@ -1,0 +1,6 @@
+classes= 5
+train  = ~/robocup_ml/train.txt
+valid  = ~/robocup_ml/validation.txt
+names = ~/robocup_ml/yolov4_416_416_reduced.names
+backup = ~/robocup_ml/backup
+
