@@ -69,6 +69,21 @@ image_dirs.append('20260219/r5')
 image_dirs.append('20260305/r4')
 image_dirs.append('20260312/r5')
 
+image_dirs.append('20260502/r3')
+image_dirs.append('20260502/r4')
+image_dirs.append('20260502/r5')
+
+image_dirs.append('20260503/r3')
+image_dirs.append('20260503/r4')
+image_dirs.append('20260503/r5')
+image_dirs.append('20260503/r7')
+
+image_dirs.append('20260514/r3')
+image_dirs.append('20260514/r4')
+image_dirs.append('20260514/r5')
+image_dirs.append('20260514/r6')
+image_dirs.append('20260514/r7')
+
 train_set = open('train.txt', 'w')  
 # test_set = open('test.txt', 'w')
 validation_set = open('validation.txt', 'w')
