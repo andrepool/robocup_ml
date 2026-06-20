@@ -12,15 +12,6 @@ image_dirs = []
 
 image_dirs.append('20190606/r2')
 image_dirs.append('20190606/r4')
-# Sydney dataset annotation incomplete and high noise level
-# image_dirs.append('20190706/r5')
-# image_dirs.append('20190706/r5_difficult')
-# image_dirs.append('20190707/r3')
-# image_dirs.append('20190707/r4')
-# image_dirs.append('20190926/r4')
-# image_dirs.append('20190926/r6')
-# image_dirs.append('20191203/r1')
-# image_dirs.append('20200123/r1')
 
 image_dirs.append('20220715/r7')
 image_dirs.append('20220716/r6')
