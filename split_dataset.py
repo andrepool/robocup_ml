@@ -76,7 +76,8 @@ image_dirs.append('20260514/r6')
 image_dirs.append('20260514/r7')
 
 image_dirs.append('20260630/r2')
-image_dirs.append('20260630/r4')
+image_dirs.append('20260630/r3')
+image_dirs.append('20260630/r6')
 image_dirs.append('20260630/r7')
 
 train_set = open('train.txt', 'w')  
