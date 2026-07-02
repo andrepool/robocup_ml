@@ -75,10 +75,27 @@ image_dirs.append('20260514/r5')
 image_dirs.append('20260514/r6')
 image_dirs.append('20260514/r7')
 
+image_dirs.append('20260528/r7')
+image_dirs.append('20260531/r6')
+
+
+image_dirs.append('20260602/r5')
 image_dirs.append('20260630/r2')
 image_dirs.append('20260630/r3')
 image_dirs.append('20260630/r6')
 image_dirs.append('20260630/r7')
+
+image_dirs.append('20260701/r2')
+image_dirs.append('20260701/r3')
+image_dirs.append('20260701/r4')
+image_dirs.append('20260701/r5')
+image_dirs.append('20260701/r7')
+
+image_dirs.append('20260702/r2')
+image_dirs.append('20260702/r3')
+image_dirs.append('20260702/r5')
+image_dirs.append('20260702/r6')
+image_dirs.append('20260702/r7')
 
 train_set = open('train.txt', 'w')  
 # test_set = open('test.txt', 'w')
